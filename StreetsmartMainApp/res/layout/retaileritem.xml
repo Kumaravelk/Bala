@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   
+    <ImageView
+        android:id="@+id/retailericon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip"
+        android:src="@drawable/loadingretailer"
+        android:visibility="invisible" />
+
+    <com.example.FontClass.Regular
+        android:id="@+id/retailername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="30dip"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/retailerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dip"
+        android:text="Small Text"
+        android:visibility="invisible"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Retailers Available"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible"
+          />
+
+</RelativeLayout>

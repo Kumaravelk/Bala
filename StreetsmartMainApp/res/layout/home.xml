@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="410dip" >
+
+    <ListView
+        android:id="@+id/BigDeals"
+        android:layout_width="match_parent"
+        android:layout_height="378dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:divider="#f0f1f3"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/noimage"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="60dip" />
+
+    <RelativeLayout
+        android:id="@+id/CitySelect"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="380dip"
+        android:background="@drawable/areaselector" >
+
+        <com.example.FontClass.Regular
+            android:id="@+id/selectcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Deals in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <com.example.FontClass.Regular
+            android:id="@+id/cityname"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="90dip"
+            android:layout_marginTop="4dip"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="City"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="260dip"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

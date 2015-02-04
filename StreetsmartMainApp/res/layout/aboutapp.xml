@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dip"
+            android:layout_height="150dip"
+           android:layout_centerInParent="true"
+            android:src="@drawable/logo" />
+
+            
+    </RelativeLayout>
+
+    <com.example.FontClass.Lightgray
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="140dip"
+        android:gravity="left"
+        android:text="@string/aboutaa" />
+
+    <com.example.FontClass.Lightgray
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="210dip"
+        android:gravity="left"
+        android:text="@string/abouta" />
+
+    <com.example.FontClass.Lightgray
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="310dip"
+        android:gravity="left"
+        android:text="@string/about" />
+
+    <com.example.FontClass.Lightgray
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dip"
+        android:layout_marginRight="60dip"
+        android:text="With Love," />
+
+    <com.example.FontClass.Lightgray
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dip"
+        android:layout_marginRight="30dip"
+        android:text="Team Street Smart" />
+
+    <com.example.FontClass.Lightgray
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="45dip"
+        android:layout_marginRight="15dip"
+        android:text="Sniffing Deals for You !" />
+
+</RelativeLayout>

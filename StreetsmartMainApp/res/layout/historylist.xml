@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/White">
+
+    <ImageView
+        android:id="@+id/displayhisdealimage"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <com.example.FontClass.SemiBoldGray
+        android:id="@+id/displayhisdealname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/displayhisdealimage"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/displayhisdealimage"
+        android:gravity="center_horizontal"
+        android:text="Small Text"
+         
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/hisid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+</RelativeLayout>

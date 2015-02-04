@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/closeicon" />
+
+    <com.example.FontClass.MyEditText
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="60dip"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress" />
+
+    <com.example.FontClass.MyEditText
+        android:id="@+id/activationcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="100dip"
+        android:ems="10"
+        android:hint="Activation Code" />
+
+    <com.example.FontClass.MyButtonView
+        android:id="@+id/activationbutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="200dip"
+        android:background="@color/loginbtn"
+        android:text="Activate Your Account" />
+
+    <com.example.FontClass.SemiBoldGray
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:text="Activate Account"
+        android:textSize="20dip" />
+
+</RelativeLayout>

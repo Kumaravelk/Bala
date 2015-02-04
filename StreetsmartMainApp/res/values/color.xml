@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="transparent">#88000000</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_background_pressed">#D3D3D3</color>
+    <color name="list_divider">#7e7e7e</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="holo_light_pink">#FF66FF</color>
+    <color name="holo_light_rose">#FF6699</color>
+    <color name="holo_light_red">#CC0000</color>
+    <color name="holo_light_blue">#3366CC</color>
+    <color name="White">#ffffff</color>
+    <color name="actionBar">#f0f1f3</color>
+    <color name="loginbtn">#373737</color>
+    <color name="introactionbar">#373737</color>
+     	
+    
+</resources>

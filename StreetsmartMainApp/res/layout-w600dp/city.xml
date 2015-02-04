@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f1f3" >
+
+    <com.example.FontClass.Lightgray
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="80dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:text="Select Your City"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/loginbtn"
+        android:textSize="40dip" />
+
+    <ListView
+        android:id="@+id/CitylistView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/citysearch"
+        android:layout_marginTop="85dip"
+        android:divider="@color/loginbtn"
+        android:dividerHeight="0.5dip"
+        android:textColor="@color/loginbtn" >
+    </ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:background="#c0c0c0" />
+
+    
+
+</RelativeLayout>

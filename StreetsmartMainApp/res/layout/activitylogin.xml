@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <com.example.FontClass.MyEditText
+            android:id="@+id/signinemail"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="60dip"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:maxLength="10" 
+            android:focusable="true"/>
+
+  
+        <com.example.FontClass.MyEditText
+            android:id="@+id/signinpword"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="102dp"
+            android:ems="10"
+            android:hint="Passcode"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:maxLength="30" />
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/closeicon" >
+        </ImageView>
+
+        <com.example.FontClass.MyButtonView
+            android:id="@+id/button1Signin"
+            android:layout_width="300dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="220dip"
+            android:background="@color/loginbtn"
+            android:text="Sign In"
+             
+             />
+
+        <com.example.FontClass.SemiBoldGray
+            android:id="@id/activationcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="180dip"
+            android:textSize="13dp"
+            android:text="Have a verification code ?" />
+
+        <com.example.FontClass.SemiBoldGray
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="160dip"
+            android:text="Forgot Passcode ?"
+            android:textColor="@color/White"
+            android:textSize="13dp"
+              />
+
+    </RelativeLayout>
+
+    <com.example.FontClass.SemiBoldGray
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dp"
+        android:text="SIGN IN"
+        android:textSize="20dip" />
+
+</RelativeLayout>

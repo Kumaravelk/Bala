@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/favouriteimage"
+        android:layout_width="182dip"
+        android:layout_height="74dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/loading_deal" />
+
+    <com.example.FontClass.RegularGray
+        android:id="@+id/favouritename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="90dip"
+        android:text="Deal Name" />
+
+    <com.example.FontClass.RegularGray
+        android:id="@+id/favoriteson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="30dip"
+        android:text="VIEWED ON"
+        android:textSize="10dip" />
+
+    <com.example.FontClass.SemiBoldGray
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="200dip"
+        android:layout_marginTop="43dip"
+        android:layout_marginRight="15dip"
+        android:text="date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <com.example.FontClass.RegularGray
+        android:id="@+id/favorid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="220dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:text="id"
+        android:visibility="invisible" />
+ 
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/deallist_bg" >
+        
+         <com.android.volley.toolbox.NetworkImageView
+             android:id="@+id/banklogo"
+             android:layout_width="60dip"
+             android:layout_height="60dip"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="13dip"
+             android:layout_marginTop="5dip"
+             android:src="@drawable/loadingretailer" />
+
+         <com.android.volley.toolbox.NetworkImageView
+             android:id="@+id/cardlogo"
+             android:layout_width="30dip"
+             android:layout_height="20dip"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="27dip"
+             android:layout_marginTop="70dip"
+             android:src="@drawable/loadingretailer" />
+
+         <com.example.FontClass.Regular
+             android:id="@+id/bankname"
+             android:layout_width="210dip"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="90dip"
+             android:layout_marginTop="5dip"
+             android:text="Medium Text"
+               android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+             android:textSize="15dip"
+             android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         <com.example.FontClass.SemiBold
+             android:id="@+id/privilage"
+             android:layout_width="210dip"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="90dip"
+             android:layout_marginTop="27dip"
+             android:text=""
+               android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textSize="15dip" />
+
+         <com.example.FontClass.Regular
+             android:id="@+id/cardtypename"
+             android:layout_width="210dip"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="90dip"
+             android:layout_marginTop="50dip"
+             android:text=""
+               android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textSize="15dip" />
+
+         <com.example.FontClass.Regular
+             android:id="@+id/cardcondition"
+             android:layout_width="210dip"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="90dip"
+             android:layout_marginTop="75dip"
+             android:text=""
+               android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textSize="10dip" />
+        
+    </RelativeLayout>
+
+   
+</RelativeLayout>

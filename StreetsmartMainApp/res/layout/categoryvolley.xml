@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f0f1f3" >
+
+    <com.example.FontClass.Lightgray
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="Select Your Category"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/loginbtn" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dip"
+        android:background="@color/loginbtn" />
+
+    <ListView
+        android:id="@+id/bwscatelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dip"
+       
+        android:dividerHeight="0.5dip"
+        android:divider="#333333"
+        android:textColor="@color/loginbtn" >
+    </ListView>
+    </RelativeLayout>

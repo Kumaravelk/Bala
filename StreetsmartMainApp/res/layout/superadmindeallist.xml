@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@color/White" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="#ffffff" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/sadminretailerlogo"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/loadingretailer" />
+
+        <com.example.FontClass.Lightgray
+            android:id="@+id/sadminretailername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="90dip"
+            android:layout_marginTop="8dip"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="13sp" />
+
+        <com.example.FontClass.RegularGray
+            android:id="@+id/sadmindealoffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="90dip"
+            android:layout_marginTop="28dip"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <com.example.FontClass.RegularGray
+            android:id="@+id/sadmindealpromo"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="90dip"
+            android:layout_marginTop="46dip"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="11sp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+        <com.example.FontClass.RegularGray
+            android:id="@+id/sadmindealprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="183dip"
+            android:layout_marginTop="73dip"
+            android:text="Medium"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/sadmindeal_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="invisible" />
+
+        <com.example.FontClass.RegularGray
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="37dip"
+            android:layout_marginTop="72dip"
+            android:text="EXPIRES"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#686666"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="73dip"
+        android:src="@drawable/clock" />
+
+    <com.example.FontClass.RegularGray
+        android:id="@+id/expeirdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="42dip"
+        android:layout_marginTop="80dip"
+        android:text="28 OCT"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#686666"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    
+
+</RelativeLayout>

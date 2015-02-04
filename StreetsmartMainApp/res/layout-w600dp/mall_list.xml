@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="210dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/deallist_bg" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/mallretailerlogo"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/loadingretailer" />
+
+        <com.example.FontClass.Lightgray
+            android:id="@+id/mallretailername"
+            android:layout_width="420dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dip"
+            android:layout_marginTop="16dip"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26sp" />
+
+        <com.example.FontClass.Regular
+            android:id="@+id/malldealoffer"
+            android:layout_width="420dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dip"
+            android:layout_marginTop="54dip"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26sp" />
+
+        <com.example.FontClass.SemiBold
+            android:id="@+id/malldealpromo"
+            android:layout_width="420dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="180dip"
+            android:layout_marginTop="92dip"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="22sp" />
+
+        <com.example.FontClass.Regular
+            android:id="@+id/malldealprice"
+            android:layout_width="240dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="350dip"
+            android:layout_marginTop="146dip"
+            android:text="Medium"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/malldeal_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="invisible" />
+
+        <com.example.FontClass.Regular
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="90dip"
+            android:layout_marginTop="144dip"
+            android:text="EXPIRES"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#686666"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/malldealtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="260dip"
+        android:layout_marginTop="150dip"
+        android:background="@drawable/multipleoffers" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="146dip"
+        android:src="@drawable/clock" />
+
+    <TextView
+        android:id="@+id/malldate"
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="95dip"
+        android:layout_marginTop="160dip"
+        android:text="28 OCT"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#686666"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/mallcreditcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="180dip"
+        android:layout_marginTop="140dip"
+        android:src="@drawable/creditcardoffer" />
+
+</RelativeLayout>

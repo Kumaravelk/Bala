@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="100dip"
+    android:background="#f0f1f3" >
+
+    <RelativeLayout
+        android:id="@+id/categorys"
+        android:layout_width="fill_parent"
+        android:layout_height="58dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/categoryselector" >
+
+        <com.example.FontClass.Regular
+            android:id="@+id/categoryname"
+            android:layout_width="360dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Select Categories"
+            android:textSize="22sp" />
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/nearmedeals"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="104dip"
+        android:layout_marginTop="75dip"
+        android:divider="#f0f1f3"
+        android:dividerHeight="12dp" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/noimage"
+        android:layout_width="400dip"
+        android:layout_height="400dip"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#0c0c0c0c" >
+
+        <SeekBar
+            android:id="@+id/radius"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="120dip"
+            android:layout_marginTop="25dip"
+            android:max="2000"
+            android:progress="100"
+            android:progressDrawable="@xml/progress"
+            android:thumb="@drawable/nearme_slider_button" />
+
+        <com.example.FontClass.MyTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dip"
+            android:text="Distance"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#333333"
+            android:textSize="30sp" />
+
+        <com.example.FontClass.MyTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="450dip"
+            android:layout_marginTop="45dip"
+            android:text="Meters"
+            android:textColor="#333333"
+            android:textSize="30dp" />
+
+        <com.example.FontClass.Regular
+            android:id="@+id/seekvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_marginLeft="470dip"
+            android:layout_marginTop="10dip"
+            android:text="500"
+            android:textColor="#333333"
+            android:textSize="30dp" />
+
+        <com.example.FontClass.MyTextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="45dip"
+            android:text="Slider"
+            android:textColor="#333333"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

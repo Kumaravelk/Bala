@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="50dip"
+    android:background="#f0f1f3" >
+
+    <RelativeLayout
+        android:id="@+id/categorys"
+        android:layout_width="220dip"
+        android:layout_height="29dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/category_tab_new" >
+
+        <com.example.FontClass.Regular
+            android:id="@+id/categoryname"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="6dip"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Select Categories" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/filterimage"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignTop="@+id/Sort"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="0dip"
+        android:layout_toRightOf="@+id/categorys"
+        android:src="@drawable/filter_single"
+        android:text="Filter" />
+    
+      <ImageView
+          android:id="@+id/clearfilterimage"
+          android:layout_width="40dip"
+          android:layout_height="40dip"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginRight="7dip"
+          android:src="@drawable/clearfilter"
+          android:text="Filter" />
+
+    <ListView
+        android:id="@+id/GEODeallist"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dip"
+        android:divider="#f0f1f3"
+        android:dividerHeight="15dp" >
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/noimage"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="100dip" />
+
+<RelativeLayout
+    android:id="@+id/CitySelect"
+    android:layout_width="fill_parent"
+    android:layout_height="35dip"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="50dip"
+    android:layout_marginTop="38dip"
+    android:background="@drawable/locationbar" >
+
+        <com.example.FontClass.Regular
+            android:id="@+id/cityname"
+            android:layout_width="250dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="City"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+<ImageView
+    android:id="@+id/geolocationarea"
+    android:layout_width="45dip"
+    android:layout_height="35dip"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="3dip"
+    android:layout_marginTop="38dip"
+    android:src="@drawable/locationarea" />
+
+</RelativeLayout>

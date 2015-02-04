@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f1f3"
+    >
+
+    <ListView
+        android:id="@+id/moredeallistView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:divider="#f0f1f3"
+        android:dividerHeight="15dp" >
+            <ImageView
+        android:id="@+id/noimage"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dip"
+        android:layout_marginTop="80dip" />
+
+    </ListView>
+
+</RelativeLayout>

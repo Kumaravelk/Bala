@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.base2.streetsmart"
+    android:versionCode="5"
+    android:versionName="2.3" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.base2.streetsmart.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.wifi" />
+
+    <permission
+        android:name="com.base2.streetsmart.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.base2.streetsmart.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:debuggable="false" >
+        <activity
+            android:name="com.base2.streetsmart.MainActivity1"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>
+        <activity android:name="com.base2.streetsmart.MainActivity"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+
+        <!-- User Detailes -->
+        <activity android:name="com.base2.streetsmart.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.RegistrationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.AboutApp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.ActivationCodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.DetailedRegistrationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.ChangePassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.Forgotpassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.ChangeForgotpassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.CustomCategoriesActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.CustomCategoriesfragmentActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.ProfileActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Home Page -->
+        <activity
+            android:name="com.base2.streetsmart.HomeTabActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.GEOActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.NearMeActivity"
+            android:screenOrientation="portrait" >
+            
+            
+            
+        </activity>
+        <activity android:name="com.base2.streetsmart.MallsActivity"
+            android:screenOrientation="portrait">
+             
+        </activity>
+        <activity android:name="com.base2.streetsmart.OnlineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Extra -->
+        <activity android:name="com.base2.streetsmart.CategoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.SearchActivity"
+            android:screenOrientation="portrait"
+            >
+            
+            
+        </activity>
+        <activity android:name="com.base2.streetsmart.SearchDealPage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.AreaActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.DetailDealActivity"
+            android:label="@string/title_activity_detaileddealpage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.example.AdapterClass.BarcodeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.BrandActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.RetailerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.FilterActivity"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.FacebookActivity"
+            android:label="@string/title_activity_facebook" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.RCategoryActivity" >
+        </activity>
+
+        <!-- Push notification -->
+        <activity
+            android:name="com.base2.pushnotifications.GMainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.base2.streetsmart" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.base2.streetsmart.GCMIntentService" />
+        <service
+            android:name="com.base2.streetsmart.TestingService"
+            android:enabled="true" />
+
+        <receiver android:name="com.base2.streetsmart.StartUpIntentReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.base2.streetsmart.RBrandActivity"
+            android:label="@string/title_activity_rbrand" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.RRetailerActivity"
+            android:label="@string/title_activity_rretailer" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.RUserProfileFragment"
+            android:label="@string/title_activity_ruser_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.MallListActivity"
+            android:label="@string/title_activity_mall_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.Volley.BigDealActivity"
+            android:label="@string/title_activity_big_deal"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.DisplayDealActivity"
+            android:label="@string/title_activity_display_deal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.View2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.View1Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.MoreDealActivity"
+            android:label="@string/title_activity_more_deal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.CustomeNotificationActivity"
+            android:label="@string/title_activity_custome_notification"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.NotificationDeal"
+            android:label="@string/title_activity_notification_deal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.Test1" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.FirstTimeSubCategory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.FirstTimeCategory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.base2.streetsmart.SuperAdminNotification"
+            android:label="@string/title_activity_super_admin_notification"
+            android:screenOrientation="portrait" >
+             
+        </activity>
+        <activity android:name="com.base2.streetsmart.CityMallActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.CityAreaActivity" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.CityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.GeoDealActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.MallDealsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.VCityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.base2.streetsmart.WifiListData"
+            android:screenOrientation="portrait" >
+        </activity>
+    
+        <activity
+            android:name=".BigDealActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+       
+        
+        <activity android:name="com.base2.streetsmart.GeoDealVolley"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.base2.streetsmart.MallDealVolley"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.base2.streetsmart.CreditCardVolley"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.base2.streetsmart.MoreDealVolley"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.base2.streetsmart.Direction"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.base2.streetsmart.View1VolleyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        
+         <activity android:name="com.base2.streetsmart.JsonParser">
+            
+         </activity>
+
+         <activity android:name="com.base2.streetsmart.FavoriteRetailerActivity">
+             
+         </activity>
+         
+          <activity android:name="com.base2.streetsmart.NewMAllActivity">
+                        </activity>
+           <activity android:name="com.base2.streetsmart.NewCityActivity">
+              
+           </activity>
+           
+             <activity android:name="com.base2.streetsmart.CustomCategoryActivity">
+              
+           </activity>
+           
+              <activity android:name="com.base2.streetsmart.CustomRetailerActivity">
+              
+           </activity>
+           
+                
+              
+          
+         
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDYntaUaoXDa1g-OYwFJF50RIspJKLQhO4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

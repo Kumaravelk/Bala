@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="50dip"
+    android:background="#f0f1f3" >
+
+    
+    <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:tabStripEnabled="true" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFFFFF"
+                    android:tabStripEnabled="true" />
+                <!-- android:background="@style/AppBaseTheme" -->
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="40dip" >
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+                    
+                </RelativeLayout>
+            </RelativeLayout>
+            
+        </TabHost>
+    
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/categorys"
+        android:layout_width="220dip"
+        android:layout_height="29dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/category_tab_new" >
+
+        <com.example.FontClass.Regular
+            android:id="@+id/categoryname"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="6dip"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Select Categories" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/filterimage"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignTop="@+id/Sort"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="0dip"
+        android:layout_toRightOf="@+id/categorys"
+        android:src="@drawable/filter_single"
+        android:text="Filter" />
+    
+      <ImageView
+          android:id="@+id/clearfilterimage"
+          android:layout_width="40dip"
+          android:layout_height="40dip"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginRight="7dip"
+          android:src="@drawable/clearfilter"
+          android:text="Filter" />
+    
+ 
+
+</RelativeLayout>
